@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -tpye f -name "*.js" -exec rm {} +
+find -type f -name "*.js" -delete
