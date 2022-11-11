@@ -10,5 +10,5 @@ do
 	then
 		echo "Hi"
 	fi
-	count=$[$count+1]
+	(( count++ ))
 done
