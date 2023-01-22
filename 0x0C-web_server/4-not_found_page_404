@@ -30,7 +30,7 @@ new_config=\
 echo "Ceci n'est pas une page" > /var/www/html/404.html
 echo "$new_config" > /etc/nginx/sites-available/default
 
-if [ "$(pgrep nginx)" -le 0 ];
+if pgrep -x "nginx" > /dev/null;
 then
     service nginx start
 else
