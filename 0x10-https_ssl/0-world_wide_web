@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# display information about subdomains.
+
+
+subdomains=( "www" "lb-01" "web-01" "web-02" )
+
+# function thtat echoes the string
+echo_dig() {
+    echo "$(dig "$2.$1" | 
+    grep -A1 'ANSWER SECTION:' |
+    tail -n1 |
+    awk -v s=$2 '{print "The subdomain "s" is a "$4" record and points to "$5}')"
+}
+
+
+
+if [ "$2" ];then
+    echo_dig $1 $2
+else
+    for i in "${subdomains[@]}"
+    do
+        echo_dig $1 $i
+    done
+fi;
