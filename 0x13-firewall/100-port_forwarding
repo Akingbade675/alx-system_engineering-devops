@@ -15,6 +15,7 @@
 COMMIT
 # end of added section
 
+
 # Don't delete these required lines, otherwise there will be errors
 *filter
 :ufw-before-input - [0:0]
