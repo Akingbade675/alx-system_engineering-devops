@@ -2,8 +2,8 @@
 '''Using a REST API, for a given employee ID,
 returns information about his/her TODO list progress'''
 
-import sys
 import requests
+import sys
 
 if __name__ == "__main__":
     userId = sys.argv[1]
@@ -20,9 +20,9 @@ if __name__ == "__main__":
     for todo in res:
         if todo.get("userId") == int(userId):
             todos_count += 1
-            if todo.get("completed") == True:
+            if todo.get("completed"):
                 comp_todos_title.append(todo.get("title"))
-    
+
     print("Employee {} is done with tasks({}/{}):".format(
                                                         name,
                                                         len(comp_todos_title),
