@@ -25,12 +25,12 @@ if __name__ == "__main__":
             userId = todo.get("userId")
 
             # checks if userId does not exists in the dict `json_data`
-            if json_data.get(userId) is None:
+            if userId not in json_data:
                 json_data[userId] = []
 
                 # sends get request to get the username of current todo userId
-                user_url = "https://jsonplaceholder.typicode.com/users/{}\
-                ".format(userId)
+                user_url = "https://jsonplaceholder.typicode.com/users/\
+{}".format(userId)
                 username = requests.get(user_url).json().get("username")
 
             # if the userId already exists in the `json_data` dict,
