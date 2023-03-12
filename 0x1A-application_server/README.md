@@ -97,6 +97,8 @@ Tasks
 
 mandatory
 
+Score: 0.00% (Checks completed: 0.00%)
+
 Let's serve what you built for [AirBnB clone v2 - Web framework](https://alx-intranet.hbtn.io/rltoken/uEAW4JG-DyhtSjYNP9o1mQ "AirBnB clone v2 - Web framework") on `web-01`. This task is an exercise in setting up your development environment, which is used for testing and debugging your code before deploying it to production.
 
 Requirements:
@@ -142,6 +144,8 @@ Hello HBNB!ubuntu@229-web-01:~/AirBnB_clone_v2$
 
 mandatory
 
+Score: 0.00% (Checks completed: 0.00%)
+
 Now that you have your development environment set up, let's get your production application server set up with `Gunicorn` on `web-01`, port `5000`. You'll need to install `Gunicorn` and any libraries required by your application. Your `Flask` application object will serve as a [WSGI](https://alx-intranet.hbtn.io/rltoken/IaAZ7A8IYGkO9Ah9uwL39Q "WSGI") entry point into your application. This will be your production environment. As you can see we want the production and development of your application to use the same port, so the conditions for serving your dynamic content are the same in both environments.
 
 Requirements:
@@ -182,6 +186,8 @@ Hello HBNB!ubuntu@229-web-01:~$
 ### 2\. Serve a page with Nginx
 
 mandatory
+
+Score: 0.00% (Checks completed: 0.00%)
 
 Building on your work in the previous tasks, configure `Nginx` to serve your page from the route `/airbnb-onepage/`
 
@@ -248,6 +254,8 @@ Hello HBNB!vagrant@ubuntu-xenial:~$
 ### 3\. Add a route with query parameters
 
 mandatory
+
+Score: 0.00% (Checks completed: 0.00%)
 
 Building on what you did in the previous tasks, let's expand our web application by adding another service for `Gunicorn` to handle. In `AirBnB_clone_v2/web_flask/6-number_odd_or_even`, the route `/number_odd_or_even/<int:n>` should already be defined to render a page telling you whether an integer is odd or even. You'll need to configure `Nginx` to proxy HTTP requests to the route `/airbnb-dynamic/number_odd_or_even/(any integer)` to a `Gunicorn` instance listening on port `5001`. The key to this exercise is getting `Nginx` configured to proxy requests to processes listening on two different ports. You are not expected to keep your application server processes running. If you want to know how to run multiple instances of `Gunicorn` without having multiple terminals open, see tips below.
 
@@ -326,6 +334,8 @@ vagrant@ubuntu-xenial:~$ curl 35.231.193.217/airbnb-dynamic/number_odd_or_even/6
 
 mandatory
 
+Score: 0.00% (Checks completed: 0.00%)
+
 Let's serve what you built for [AirBnB clone v3 - RESTful API](https://alx-intranet.hbtn.io/rltoken/QXJ9ryafcRfd_cARiugRiQ "AirBnB clone v3 - RESTful API") on `web-01`.
 
 Requirements:
@@ -373,6 +383,8 @@ vagrant@ubuntu-xenial:~$
 
 mandatory
 
+Score: 0.00% (Checks completed: 0.00%)
+
 Let's serve what you built for [AirBnB clone - Web dynamic](https://alx-intranet.hbtn.io/rltoken/RxqcMPx7OaDUPPtQfGJDUg "AirBnB clone - Web dynamic") on `web-01`.
 
 Requirements:
@@ -395,3 +407,5 @@ After loading, your website should look like this:
 -   GitHub repository: `alx-system_engineering-devops`
 -   Directory: `0x1A-application_server`
 -   File: `5-app_server-nginx_config`
+
+ Done?

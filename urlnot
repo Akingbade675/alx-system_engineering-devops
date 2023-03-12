@@ -1,0 +1,10 @@
+#!/bin/bash
+
+readme_url="https://raw.githubusercontent.com/Pericles001/alx-system_engineering-devops/master/0x1A-application_server/gunicorn.conf"
+
+if curl --head --fail --silent --show-error "$readme_url" >/dev/null; then
+  echo "Readme URL exists. Continuing with the rest of the code."
+  # rest of the code that uses the readme_url
+else
+  echo "Readme URL does not exist. Skipping the rest of the code."
+fi
